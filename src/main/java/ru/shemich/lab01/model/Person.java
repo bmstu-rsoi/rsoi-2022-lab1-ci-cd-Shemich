@@ -14,7 +14,7 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor
 @AllArgsConstructor
 @FieldDefaults(level = PRIVATE)
-@Table(name = "persons_table")
+@Table(name = "persons")
 public class Person {
     @Id
     @GeneratedValue(strategy = IDENTITY)
