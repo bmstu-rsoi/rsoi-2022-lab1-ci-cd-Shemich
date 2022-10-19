@@ -23,6 +23,12 @@ jobs:
           dependencies-cache-enabled: true
           arguments: clean build
 
+      - name: Setup gradle
+        uses: gradle/gradle-build-action@v2
+
+      - name: Gradle build
+        run: ./gradlew clean build
+
       - name: Deploy project
         uses: akhileshns/heroku-deploy@v3.4.6
         with:
