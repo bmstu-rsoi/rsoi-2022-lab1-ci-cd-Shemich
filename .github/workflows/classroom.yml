@@ -3,12 +3,6 @@ on:
   push:
     branches:
       - master
-<<<<<<< HEAD
-  pull_request:
-    branches:
-      - master
-=======
->>>>>>> develop
 jobs:
   build:
     name: Autograding
@@ -18,19 +12,6 @@ jobs:
         with:
           fetch-depth: 0
 
-<<<<<<< HEAD
-      # TODO build, test and deploy project
-
-      - name: Run API Tests
-        uses: matt-ball/newman-action@master
-        with:
-          collection: postman/[inst] Lab1.postman_collection.json
-          environment: postman/[inst][heroku] Lab1.postman_environment.json
-          delayRequest: 100
-          reporters: '[ "cli" ]'
-
-=======
->>>>>>> develop
       - name: Autograding
         uses: education/autograding@v1
         continue-on-error: true
