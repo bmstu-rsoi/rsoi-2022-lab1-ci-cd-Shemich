@@ -13,6 +13,7 @@ jobs:
           fetch-depth: 0
 
       # TODO build, test and deploy project
+      - name: Setup JDK
       - uses: actions/setup-java@v1
         with:
           java-version: 11
@@ -30,7 +31,7 @@ jobs:
         run: ./gradlew clean build
 
       - name: Deploy project
-        uses: akhileshns/heroku-deploy@v3.4.6
+        uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: rsoi-lab01-shemich
