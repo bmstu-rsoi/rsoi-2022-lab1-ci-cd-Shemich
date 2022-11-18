@@ -3,11 +3,8 @@
     {
       "name": "Run Postman",
       "setup": "",
-<<<<<<< HEAD
       "run": "newman run -e postman/[inst][heroku]\\ Lab1.postman_environment.json postman/[inst]\\ Lab1.postman_collection.json",
-=======
       "run": "echo done",
->>>>>>> develop
       "input": "",
       "output": "",
       "comparison": "included",
